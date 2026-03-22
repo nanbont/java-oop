@@ -1,29 +1,28 @@
 # Java OOP Journey
 
-## Week 1 — Bank Account System
+## About
+Accelerated Java OOP study completed at fast pace
+due to strong prior technical background.
 
-### What I built
-A Bank Account System built from scratch in Java demonstrating 
-core OOP concepts.
+## Progress
+| Project               | Concepts                                        | Time  |
+|-----------------------|-------------------------------------------------|-------|
+| Week1-BankSystem      | Encapsulation, Constructors,                    | Day 1 |
+|                       | Access modifiers, Static vs instance            |       |
+| Week2-VehicleFleet    | Inheritance, Polymorphism,                      | Day 2 |
+|                       | Abstract classes, instanceof, Method overriding |       |
+| Week3-PaymentGateway  | Interfaces, SOLID principles                    | Soon  |
+| Week4-CoffeeShop      | Design Patterns                                 | Soon  |
+| Week5-DataPipeline    | Generics, Streams, Lambdas                      | Soon  |
+| Week6-ECommerce       | Full system design (Capstone)                   | Soon  |
 
-### Project structure
+## Projects
+### Week 1 — Bank Account System
+- `Transaction` — immutable record of deposits and withdrawals
+- `BankAccount` — core account with encapsulation and custom exceptions
+- `SavingsAccount` — extends BankAccount with monthly withdrawal limit
 
-src/
-├── model/
-│   ├── Transaction.java
-│   ├── BankAccount.java
-│   └── SavingsAccount.java
-├── exception/
-│   └── InsufficientFundsException.java
-└── Main.java
-
-
-### Concepts covered
-- Encapsulation — private fields, getters/setters
-- Constructors — overloading, chaining with this()
-- Access modifiers — private, protected, public
-- static vs instance — totalAccounts shared counter
-- Immutability — final fields on Transaction
-- Custom exceptions — checked vs unchecked
-- Inheritance — SavingsAccount extends BankAccount
-- Polymorphism — List<BankAccount> holding mixed types
+### Week 2 — Vehicle Fleet Manager
+- `Vehicle` — abstract parent class with shared behaviour
+- `Car`, `Truck`, `Motorcycle` — subclasses with polymorphic behaviour
+- Runtime polymorphism — one List, many vehicle types
